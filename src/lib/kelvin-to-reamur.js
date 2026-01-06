@@ -1,4 +1,4 @@
-export function celciusFarenheit(masukanKelvin){
+export function kelvinReamur(masukanKelvin){
     if(typeof masukanKelvin !== "number"){
         throw new Error("Input harus berupa Number!");
     }
