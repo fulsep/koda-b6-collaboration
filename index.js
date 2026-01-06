@@ -40,7 +40,7 @@ async function main() {
             if (goalTemp === 1) {
                 const celcius = converter.toCelcius;
                 console.log(`Nilai dalam celcius adalah ${celcius}`);
-            } else if (goalTemp === 3) {
+            } else if (goalTemp === 2) {
                 const fahrenheit = converter.toFahrenheit;
                 console.log(`Nilai dalam Fahrenheit adalah ${fahrenheit}`);
             } else if (goalTemp === 4) {
