@@ -1,10 +1,14 @@
 export function reamurToCelcius(reamur) {
-  if (typeof reamur !== "number" || isNaN(reamur)) {
-    return "Input harus berupa angka";
-  }
-
-  const celcius = (reamur * 5) / 4;
-  return celcius;
+    try {
+        if (typeof reamur !== "number" || isNaN(reamur)) {
+            throw new Error(`${typeof reamur} ${reamur} is not a number!`)
+        } else {
+            const celcius = (reamur * 5) / 4
+            return celcius
+        }
+    } catch (error) {
+        return error
+    }
 }
 
 

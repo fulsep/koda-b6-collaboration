@@ -1,10 +1,11 @@
-export default function kelvinToFahrenheit(params) {
-    if (typeof params !== "number") {
-        throw new Error("Input must be a number");
-    }
+export default function kelvinToFahrenheit(kelvin) {
     try{
-        return (params - 273.15) * 9/5 + 32;
+        if (typeof kelvin !== "number") {
+            throw new Error(`${typeof kelvin} ${kelvin} is not a number!`)
+        }else{
+            return (kelvin - 273.15) * 9/5 + 32
+        }
     }catch(err){
-        console.log(err);
+        return err
     }
 }

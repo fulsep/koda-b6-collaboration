@@ -1,8 +1,11 @@
-export function fahrenheitToCelcius(num) {
-  if (typeof num !== "number" || num !== num) {
-    console.log("Input harus angka");
-  }
-
-  let c = (5 / 9) * (num - 32);
-  return c;
+export function fahrenheitToCelcius(fahrenheit) {
+    try {
+        if (typeof fahrenheit !== "number" || fahrenheit !== fahrenheit) {
+            throw new Error(`${typeof fahrenheit} ${fahrenheit} is not a number!`)
+        }
+        let c = (5 / 9) * (fahrenheit - 32)
+        return c
+    } catch (error) {
+        return error
+    }
 }

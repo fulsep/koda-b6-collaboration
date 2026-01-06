@@ -1,12 +1,13 @@
-export function kelvinReamur(masukanKelvin){
-    if(typeof masukanKelvin !== "number"){
-        throw new Error("Input harus berupa Number!");
+export function celciusFarenheit(kelvin) {
+    try {
+        if (typeof kelvin !== "number") {
+            throw new Error(`${typeof kelvin} ${kelvin} is not a number!`)
+        } else {
+            const res = (kelvin - 273) * (8 / 10)
+            return res
+        }
     }
-    try{
-        const res = (masukanKelvin - 273) * (8/10);
-        return res; 
-    }
-    catch(err){
-        console.log(`Terjadi kesalahan: ${err.message}`);
+    catch (err) {
+        return err.message
     }
 }
