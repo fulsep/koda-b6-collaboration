@@ -2,7 +2,7 @@ import { rl, inputTemperature, inputStartTemp, inputGoalTemp } from "./src/lib/i
 import { celciusFarenheit, celciusToKelvin, celciusToReamur } from "./src/lib/celcius.js";
 import { fahrenheit } from "./src/lib/fahrenheit.js";
 import { reamur } from "./src/lib/reamur.js";
-
+import { kelvinToCelcius, kelvinToReamur, kelvinToFahrenheit } from "./src/lib/kelvin.js";
 
 async function main() {
     try {
@@ -55,5 +55,30 @@ async function main() {
     }
 }
 
+async function kelvinConverter() {
+  try {
+    const startTemp = await inputStartTemp();
+    const goalTemp = await inputGoalTemp(startTemp);
+    const temp = await inputTemperature();
+    if (startTemp === 4) {
+      if (goalTemp === 1) {
+        let celcius = kelvinToCelcius(12);
+        console.log(`Nilai dalam celcius adalah ${celcius}`);
+      } else if (goalTemp === 2) {
+        const fahrenheit = kelvinToFahrenheit(12);
+        console.log(`Nilai dalam fahrenheit adalah ${fahrenheit}`);
+      } else if (goalTemp === 3) {
+        const reamure = kelvinToReamur(12)
+        console.log(`Nilai dalam reamure adalah ${reamure}`);
+      }
+    }
+  } catch (error) {
+    console.error(error.message);
+  } finally {
+    rl.close();
+  }
+}
+
 
 main();
+kelvinConverter();
