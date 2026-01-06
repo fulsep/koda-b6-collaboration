@@ -14,14 +14,14 @@ async function main() {
         if (startTemp === 1){
             let converter
             if (goalTemp === 2){ // celcius to fahrenheit
-                const celcius = celciusFarenheit(temp)
-                console.log(`Nilai celcius ke Fahrenheit = ${celcius}`)
+                const fahrenheit = celciusFarenheit(temp)
+                console.log(`Nilai dalam Fahrenheit adalah ${fahrenheit}`)
             } else if (goalTemp === 3){ // celcius to reamur
                 const reamur = celciusToReamur(temp)
-                console.log(`Nilai celcius ke Fahrenheit = ${reamur}`)
+                console.log(`Nilai dalam Reamur adalah ${reamur}`)
             } else if (goalTemp === 4){ // celcius to kelvin
                 const kelvin = celciusToKelvin(temp)
-                console.log(`Nilai celcius ke Fahrenheit = ${kelvin}`)
+                console.log(`Nilai dalam Kelvin adalah ${kelvin}`)
             }
         } else if (startTemp === 2) {
             const converter =  fahrenheit(temp);
