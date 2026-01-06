@@ -1,14 +1,10 @@
 function reamurToKelvin(reamur) {
-  try {
-    if (typeof reamur !== "number" || isNaN(reamur)) {
-      throw new Error("Input harus berupa angka");
-    }
-
-    const kelvin = (reamur * 5) / 4 + 273.15;
-    return kelvin;
-  } catch (error) {
-    return error.message;
+  if (typeof reamur !== "number" || isNaN(reamur)) {
+    return "Input harus berupa angka";
   }
+
+  const kelvin = (reamur * 5) / 4 + 273.15;
+  return kelvin;
 }
 
 const suhuReamur = 20;
