@@ -1,4 +1,4 @@
-import { fahrenheitToKelvin } from "./fahrenheitToKelvin.js";
+import { fahrenheitToKelvin } from "./fahrenheit-to-kelvin.js";
 
 async function conversi() {
   try {
