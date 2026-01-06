@@ -1,3 +1,12 @@
 export function celciusToReamur(celcius){
-    return celcius * (4/5)
+    if(typeof celcius !== "number"){
+        const err = new Error("Input celcius bukan number")
+        throw err
+    }
+    try{
+        return celcius * (4/5)
+    }catch(err){
+        console.log(err)
+    }
+    
 }
