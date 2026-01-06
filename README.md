@@ -1,43 +1,43 @@
-# Konversi Suhu (Node.js)
+# Temperature Conversion (Node.js)
 
-Program **konversi suhu berbasis Node.js** yang dibuat secara modular menggunakan fungsi (function) dengan validasi input yang sederhana dan jelas.
-
----
-
-##  Deskripsi
-
-Repository ini berisi implementasi program konversi suhu menggunakan JavaScript (Node.js).  
-Struktur kode dibuat terpisah per fungsi agar mudah dipahami, dirawat, dan dikembangkan.
+A Node.js-based **Temperature Conversion** program created modularly using functions with simple and clear input validation.
 
 ---
 
-##  Fitur
-Saat ini, program mendukung konversi:
-- Reamur ke Celcius
-- Reamur ke Kelvin
-- Reamur ke Fahrenheit
-- Celcius ke Reamur
-- Celcius ke Kelvin
-- Celcius ke Fahrenheit
-- Kelvin ke Reamur
-- Kelvin ke Celcius
-- Kelvin ke Fahrenheit
-- Fahrenheit ke Reamur
-- Fahrenheit ke Celcius
-- Fahrenheit ke Kelvin
+##  Description
+
+This Repository contains an implementation of a temperature conversion program using Javascript (Node.js).
+The code structured is separately every function for ease understanding, maintenance, and development.
+
+---
+
+##  Feature 
+Currently, the program supports converting:
+- Reamur to Celcius
+- Reamur to Kelvin
+- Reamur to Fahrenheit
+- Celcius to Reamur
+- Celcius to Kelvin
+- Celcius to Fahrenheit
+- Kelvin to Reamur
+- Kelvin to Celcius
+- Kelvin to Fahrenheit
+- Fahrenheit to Reamur
+- Fahrenheit to Celcius
+- Fahrenheit to Kelvin
 
 
 
 ---
 
-## Teknologi yang Digunakan
+## What Tech do We Use?
 
 - JavaScript (ES6)
 - Node.js
 
 ---
 
-## Struktur Folder
+## Folder Structure
 ```
 |-src/
     |-lib
@@ -49,7 +49,7 @@ README.md
 
 ```
 
-## Cara Menjalankan Program
-Untuk menjalankan program ini ketik code **npm run dev** pada terminal
+## How to Run the Program?
+To run this program, type code **npm run dev** in the terminal
 
 
