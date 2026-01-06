@@ -1,20 +1,28 @@
 
 import { rl, inputTemperature, inputStartTemp, inputGoalTemp } from "./src/lib/input.js"; 
-
+import { celciusFarenheit, celciusToKelvin, celciusToReamur } from "./src/lib/celcius.js";
 import { fahrenheit } from "./src/lib/fahrenheit.js";
 
 
 async function main() {
-   
     try {
-
         const startTemp = await inputStartTemp();
-
         const goalTemp = await inputGoalTemp(startTemp);
-
         const temp = await inputTemperature();
 
-        if (startTemp === 2) {
+        if (startTemp === 1){
+            let converter
+            if (goalTemp === 2){ // celcius to fahrenheit
+                const celcius = celciusFarenheit(temp)
+                console.log(`Nilai celcius ke Fahrenheit = ${celcius}`)
+            } else if (goalTemp === 3){ // celcius to reamur
+                const reamur = celciusToReamur(temp)
+                console.log(`Nilai celcius ke Fahrenheit = ${reamur}`)
+            } else if (goalTemp === 4){ // celcius to kelvin
+                const kelvin = celciusToKelvin(temp)
+                console.log(`Nilai celcius ke Fahrenheit = ${kelvin}`)
+            }
+        } else if (startTemp === 2) {
             const converter =  fahrenheit(temp);
             if (goalTemp === 1) {
                 const celcius = converter.toCelcius;
