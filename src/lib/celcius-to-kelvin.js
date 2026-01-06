@@ -1,11 +1,12 @@
-export default function celciusToKelvin(celcius) {
+export function celciusToKelvin(params) {
     try {
-        if (typeof celcius === 'number') {
-            return celcius + 273.15
-        } else {
-            throw new Error(`${typeof celcius} ${celcius} is not a number!`)
+        if (typeof params !== "number") {
+            throw new Error(`${typeof params} ${params} is not a number!`)
+        }else{
+            return params + 273.15
         }
-    } catch (error) {
-        return error
+    }
+    catch (err) {
+        return err
     }
 }
