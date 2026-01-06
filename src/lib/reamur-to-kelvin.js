@@ -1,12 +1,11 @@
-export function reamurToKelvin(reamur){
-    if(typeof reamur !== "number"){
-        const err = new Error("Input reamur bukan number")
-        throw err
+export function reamurToKelvin(reamur) {
+    try {
+        if (typeof reamur !== "number") {
+            throw new Error(`${typeof reamur} ${reamur} is not a number!`)
+        }else{
+            return (reamur * (5 / 4)) + 273
+        }
+    } catch (err) {
+        return err
     }
-    try{
-        return (reamur * (5/4)) + 273
-    }catch(err){
-        console.log(err)
-    }
-    
 }

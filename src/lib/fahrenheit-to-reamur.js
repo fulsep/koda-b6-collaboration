@@ -1,14 +1,15 @@
 export function fahrenheitToReamurs(fahrenheit) {
-    if (typeof fahrenheit !== 'number') {
-        throw new Error('fahrenheit harus berupa angka');
-        
+    try {
+        if (typeof fahrenheit !== 'number') {
+            throw new Error(`${typeof fahrenheit} ${fahrenheit} is not a number!`)
+        } else {
+            const reamur = (fahrenheit - 32) * 4 / 9
+            return reamur
+        }
+    } catch (error) {
+        return error
     }
-    const reamur = (fahrenheit - 32) * 4/9;
-    console.log('nilai reamur dari fahrenheit adalah: ', reamur);
-    return reamur;
-
 }
-
 
 
 

@@ -1,13 +1,11 @@
 export function reamurToFahrenheit(reamur) {
-    if (typeof reamur !== 'number') {
-        throw new Error('reamur harus berupa angka');
+    try {
+        if (typeof reamur !== 'number') {
+            throw new Error(`${typeof reamur} ${reamur} not a number!`)
+        }
+        const fahrenheit = reamur * 1.8 + 32
+        return fahrenheit
+    } catch (err) {
+        return err.message
     }
-    try{
-    const fahrenheit = reamur * 1.8 + 32;
-    console.log('nilai fahrenheit dari reamur adalah: ', fahrenheit);
-    return fahrenheit;
-    }catch(err){
-        console.log(err.message);
-    }
-    
 }
