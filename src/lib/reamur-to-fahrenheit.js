@@ -6,6 +6,6 @@ export function reamurToFahrenheit(reamur) {
         const fahrenheit = reamur * 1.8 + 32
         return fahrenheit
     } catch (err) {
-        return err.message
+        return err
     }
 }
