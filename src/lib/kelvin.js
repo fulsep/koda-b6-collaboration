@@ -1,6 +1,6 @@
-import { kelvinToCelcius } from "./kelvin-to-celcius"
-import { kelvinReamur as kelvinToReamur } from "./kelvin-to-reamur"
-import { kelvinToFahrenheit } from "./kelvin-to-fahrenheit"
+import { kelvinToCelcius } from "./kelvin-to-celcius.js"
+import { kelvinReamur as kelvinToReamur } from "./kelvin-to-reamur.js"
+import { kelvinToFahrenheit } from "./kelvin-to-fahrenheit.js"
 
 export {kelvinToCelcius, kelvinToReamur, kelvinToFahrenheit}
 
