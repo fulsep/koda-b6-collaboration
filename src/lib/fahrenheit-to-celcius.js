@@ -1,4 +1,4 @@
-function fahrenheitToCelcius(num) {
+export function fahrenheitToCelcius(num) {
   if (typeof num !== "number" || num !== num) {
     console.log("Input harus berupa angka");
   }
