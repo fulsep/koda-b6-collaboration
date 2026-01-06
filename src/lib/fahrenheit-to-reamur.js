@@ -9,8 +9,6 @@ export function fahrenheitToReamurs(fahrenheit) {
 
 }
 
-    
-fahrenheitToReamurs(100);
 
 
 
