@@ -1,6 +1,6 @@
-import { fahrenheitToCelcius } from "./fahrenheit-to-celcius";
-import { fahrenheitToReamurs } from "./fahrenheit-to-reamur";
-import { farenheitKelvin } from "./fahrenheit-to-kelvin";
+import { fahrenheitToCelcius } from "./fahrenheit-to-celcius.js";
+import { fahrenheitToReamurs } from "./fahrenheit-to-reamur.js";
+import { farenheitKelvin } from "./fahrenheit-to-kelvin.js";
 
 export const fahrenheit = (num) => {
     return {
