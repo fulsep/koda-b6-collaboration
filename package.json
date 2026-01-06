@@ -1,0 +1,27 @@
+{
+  "name": "koda-b6-collaboration",
+  "version": "1.0.0",
+  "description": "Temp Converter App, this project intended for practicing collaborative development and teamwork",
+  "homepage": "https://github.com/fulsep/koda-b6-collaboration#readme",
+  "bugs": {
+    "url": "https://github.com/fulsep/koda-b6-collaboration/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fulsep/koda-b6-collaboration.git"
+  },
+  "license": "MIT",
+  "author": "Talents Koda Batch 6",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node --watch index.js",
+    "lint": "npx eslint **/*.js",
+    "lint:fix": "npx eslint **/*.js --fix"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.2",
+    "eslint": "^9.39.2",
+    "globals": "^17.0.0"
+  }
+}
