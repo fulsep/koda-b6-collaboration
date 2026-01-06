@@ -7,6 +7,7 @@ function reamurToCelcius(reamur) {
   return celcius;
 }
 
+
 const suhuReamur = 20;
 const hasil = reamurToCelcius(suhuReamur);
 
