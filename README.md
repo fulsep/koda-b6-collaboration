@@ -9,9 +9,6 @@ Program **konversi suhu berbasis Node.js** yang dibuat secara modular menggunaka
 Repository ini berisi implementasi program konversi suhu menggunakan JavaScript (Node.js).  
 Struktur kode dibuat terpisah per fungsi agar mudah dipahami, dirawat, dan dikembangkan.
 
-
-
-
 ---
 
 ##  Fitur
