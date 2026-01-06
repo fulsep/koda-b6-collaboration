@@ -3,6 +3,6 @@ function fahrenheitToCelcius(num) {
     console.log("Input harus berupa angka");
   }
 
-  let k = (5 / 9) * (num - 32) + 273.15;
-  return k;
+  let c = (5 / 9) * (num - 32);
+  return c;
 }
