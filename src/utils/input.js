@@ -1,6 +1,5 @@
 import readline from 'node:readline/promises'
 import { stdin as input, stdout as output } from 'node:process'
-import { start } from 'node:repl'
 
 export const rl = readline.createInterface({input, output})
 
