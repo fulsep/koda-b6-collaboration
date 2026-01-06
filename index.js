@@ -1,4 +1,3 @@
-
 import { rl, inputTemperature, inputStartTemp, inputGoalTemp } from "./src/lib/input.js"; 
 import { celciusFarenheit, celciusToKelvin, celciusToReamur } from "./src/lib/celcius.js";
 import { fahrenheit } from "./src/lib/fahrenheit.js";
