@@ -27,6 +27,9 @@ export async function inputStartTemp() {
         const error = new Error("The input start temperature is not a number.")
         throw error
     }
+    if (![1, 2, 3, 4].includes(startTemp)) {
+        const error = new Error("The start temperature is not valid.")
+    }
 
     return startTemp
 }
@@ -43,6 +46,10 @@ export async function inputGoalTemp(startTemp) {
     if (isNaN(goalTemp)) {
         const error = new Error("The input goal temperature is not a number.")
         throw error
+    }
+
+    if (![1, 2, 3, 4].includes(goalTemp)) {
+        const error = new Error("The goal temperature is not valid.")
     }
 
     if (goalTemp === startTemp) {
