@@ -1,13 +1,13 @@
-function reamurToKelvin(reamur) {
+function reamurToCelcius(reamur) {
   if (typeof reamur !== "number" || isNaN(reamur)) {
     return "Input harus berupa angka";
   }
 
-  const kelvin = (reamur * 5) / 4 + 273.15;
-  return kelvin;
+  const celcius = (reamur * 5) / 4;
+  return celcius;
 }
 
 const suhuReamur = 20;
-const hasil = reamurToKelvin(suhuReamur);
+const hasil = reamurToCelcius(suhuReamur);
 
-console.log(`${suhuReamur}°Re = ${hasil} K`);
+console.log(`${suhuReamur}°Re = ${hasil}°C`);
