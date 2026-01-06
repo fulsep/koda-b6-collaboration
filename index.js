@@ -34,7 +34,7 @@ async function main() {
                 console.log(`Nilai dalam celcius adalah ${celcius}`);
             } else if (goalTemp === 3) {
                 const fahrenheit = converter.toFahrenheit;
-                console.log(`Nilai dalam Reamur adalah ${fahrenheit}`);
+                console.log(`Nilai dalam Fahrenheit adalah ${fahrenheit}`);
             } else if (goalTemp === 4) {
                 const kelvin = converter.toKelvin;
                 console.log(`Nilai dalam Kelvin adalah ${kelvin}`);
