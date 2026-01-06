@@ -1,0 +1,22 @@
+{
+  "name": "koda-b6-collaboration",
+  "version": "1.0.0",
+  "description": "This project is intended to use in collaboration session",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adityabastyas/koda-b6-collaboration.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/adityabastyas/koda-b6-collaboration/issues"
+  },
+  "homepage": "https://github.com/adityabastyas/koda-b6-collaboration#readme"
+}
