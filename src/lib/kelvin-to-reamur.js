@@ -8,6 +8,6 @@ export function celciusFarenheit(kelvin) {
         }
     }
     catch (err) {
-        return err.message
+        return err
     }
 }
